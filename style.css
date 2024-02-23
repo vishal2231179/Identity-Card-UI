@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.946);
+}
+
+h1 {
+    position: relative;
+    bottom: 300px;
+    left: 200px
+}
+
+.card {
+    max-width: 350px;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    border-radius: 24px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 6px 2px rgb(92, 92, 92);
+    display: flex;
+
+    position: relative;
+    right: 50px;
+
+
+}
+
+.card::before {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 74, 37), rgb(2, 112, 57), rgb(61, 174, 104));
+    position: absolute;
+    border-radius: 24px 24px 0 0;
+}
+
+.img {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.img .pro-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    /* filter: sepia(100%) */
+}
+
+.card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 15px;
+}
+
+
+.name {
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: boldER;
+}
+
+.psit {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+    font-size: 250%;
+    font-weight: bold;
+    font-family: Impact, 'Arial Narrow Bold';
+    position: relative;
+    letter-spacing: 3px;
+
+}
+
+.kanpur {
+    color: rgb(250, 250, 250);
+    text-decoration: underline 1px;
+    font-family: 'Pristina', sans-serif;
+    position: relative;
+
+
+}
+
+.qr {
+    position: relative;
+    /* left right top bottom */
+    right: 112px;
+    height: 110px;
+    width: 110px;
+    top: 5px;
+
+
+}
+
+.clg-data {
+    height: 100px;
+    width: 210px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 115px;
+    left: 60px;
+    font-size: small;
+}
+
+.valid {
+    transform: rotate(-90deg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: small;
+    position: relative;
+    right: 55%;
+    bottom: 42px;
+
+}
+
+@media screen and (max-width: 454px) {
+
+    /* @media only screen and (min-width: 600px) */
+    .qr {
+
+        display: none;
+    }
+
+    .clg-data {
+        padding-top: 120px;
+        padding-right: 40px;
+
+
+    }
+
+    .college {
+        font-size: 12px;
+    }
+
+
+
+}
